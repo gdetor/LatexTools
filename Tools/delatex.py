@@ -48,8 +48,9 @@ def goto_directory(path):
 
 
 def deletion(path):
-    types = ('.log', '.aux', '.dvi', '.bbl', '.blg', '.glo', '.out', 'pdf',
-             '.lot', '.lof', '.toc', '.not', '.bm', '.nav', '.snm', 'fls')
+    types = ('.log', '.aux', '.dvi', '.bbl', '.blg', '.glo', '.out',
+             '.lot', '.lof', '.toc', '.not', '.bm', '.nav', '.snm', 'fls',
+             'fdb_latexmk')
 
     for root, dirs, files in os.walk(path):
         for currentFile in files:
